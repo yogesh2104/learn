@@ -3,7 +3,8 @@ import Breadcrumb from "react-bootstrap/Breadcrumb";
 import { FaHome } from "react-icons/fa";   //npm install react-icons --save
 import './CustomDesign.css'
 import LeftSideFrom from './LeftSideFrom';
-import GuideText from './GuideText';
+import RightSideFrom from './RightSideFrom';
+// import GuideText from './GuideText';
 
 const CustomDesign = () => {
   return (
@@ -27,7 +28,7 @@ const CustomDesign = () => {
               <div className="col-md-8 fix-left">
                 <LeftSideFrom />
               </div>
-              <div className="col-md-4 border">Right Side</div>
+              <div className="col-md-4"><RightSideFrom/></div>
             </div>
           </div>
         </div>

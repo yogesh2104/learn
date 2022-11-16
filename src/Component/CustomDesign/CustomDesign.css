@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'VerlagBook' !important;
+    font-family: 'VerlagBook' sans-serif;
     letter-spacing: 0.5px;
     font-size: 15px;
     font-variant-numeric: lining-nums;
@@ -48,7 +48,7 @@ p{
     top: 25px;
 }
 
-/* !Left Side From CSS Start */
+/* !Left Side Form CSS Start */
 .custom-form{
     background-color: #fff;
     box-shadow: 0 0 5px 0 #80808082;
@@ -103,7 +103,124 @@ label {
     box-shadow: 0 1px 6px 0 #a4000154;
 }
 
-/* !Left Side From CSS End */
+/* !Left Side Form CSS End */
+
+
+
+/* !Right Side Form CSS Start */
+.custom_box{
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 #80808082;
+    border-radius: 5px;
+}
+.text-center{
+    text-align: center;
+}
+.padding{
+    padding: 10px 10px;
+}
+label{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.contact_title{
+    padding: 10px;
+    /* background: #590004; */
+    color: #fff !important;
+    margin-bottom: 15px;
+}
+.font-18{
+    font-size: 18px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.from_Group{
+    margin-bottom: 15px;
+}
+.form_control{
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.input_group{
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.input-group:focus {
+    border-color: #a40001;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px #dedede;
+}
+.input-group-addon:first-child {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.input_group .form_control:last-child{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.input-group-addon{
+    display: table-cell;
+}
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+textarea {
+    resize: none;
+}
+textarea.form_control {
+    height: auto;
+}
+
+
+
+/* !Right Side Form CSS End */
+
+
 
 
 
