@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,400&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+#wrapper {
+  margin-top: 20px;
+}
+#wrapper .breadcrumb :active{
+  background: transparent;
+  border-radius: 0;
+  padding: 16px 0;
+  margin-bottom: 30px;
+  color: #30373e !important;
+}
+
+
+#id .header {
+  margin-bottom: 1.5625rem;
+  background: transparent;
+}
+
+.header h1 {
+  font-family: "Soligant", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  color: #514633;
+}
+.pb {
+  padding-bottom: 50px;
+}
+.pb-120 {
+  padding-bottom: 120px;
+}
+.block {
+  margin-bottom: 0;
+}
+.homemade {
+  background: no-repeat;
+}
+
+.title_ {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #30373e;
+  margin-bottom: 15px;
+}
+.sub_title {
+  font-family: "Soligant", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.21;
+  text-align: center;
+  text-transform: capitalize;
+  color: #30373e;
+  display: block;
+  margin: 0 auto 50px;
+  max-width: 1094px;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.text-w .right-side {
+  margin-left: auto;
+}
+.text-w > * {
+  text-align: left;
+}
+
+p {
+  font-size: 16px;
+  color: #30373e;
+  font-weight: 400;
+  line-height: 24px;
+}
+.bg-color {
+  background: no-repeat rgb(248, 246, 244);
+}
+.position {
+  position: relative;
+}
+.about-ceo {
+  text-align: center;
+}
+
+.pt {
+  padding-top: 30px;
+}
+
+.ceo-quotes {
+  margin: auto;
+  max-width: 590px;
+}
+
+.ceo-sign {
+  vertical-align: middle;
+  border-style: none;
+}
+.mt-30 {
+  margin-top: 130px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.appointement {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.lower {
+  text-transform: lowercase;
+}
+.link-primary {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff !important;
+  background: #30373e;
+  padding: 11px 38px;
+  display: inline-block;
+  margin-top: 34px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.mb {
+  padding-bottom: 30px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+/* Expolor Component CSS Start */
+.text {
+  text-align: center;
+}
+.text h3 {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #30373e;
+  margin: 13px 0;
+}
+.description p {
+  font-size: 16px;
+  color: #30373e;
+  font-weight: 400;
+  line-height: 24px;
+}
+.description a:hover{
+    color:rgb(240, 187, 42);
+}
+.description a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #000;
+}
+/* Expolor Component CSS End */
+@media (min-width:767px) {
+    .description h3{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+  .pb-120 {
+    padding-bottom: 120px;
+  }
+}
+@media (min-width: 992px) {
+  .pt-120 {
+    padding-top: 120px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+  .top-responsive {
+    margin-top: 0;
+    text-align: center;
+  }
+  .bottom-responsive {
+    text-align: center;
+  }
+  .right-responsive {
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+@media (min-width: 990px) and (max-width: 1196px) {
+    .ceo-quotes{
+        max-width: 430px;
+    }
+    .top-responsive {
+      margin-top: 70px;
+      text-align: center;
+    }
+    .bottom-responsive {
+      text-align: center;
+    }
+    .right-responsive {
+      text-align: center;
+      padding-top: 0;
+      margin-top: 120px;
+    }
+  }
+@media (min-width: 300px) and (max-width: 700px) {
+    .top-responsive {
+      margin-top: 0;
+      text-align: center;
+    }
+    .bottom-responsive {
+      text-align: center;
+    }
+    .right-responsive {
+      text-align: center;
+      padding-top: 0;
+      margin-top: 0;
+    }
+  }
+@media (min-width:560px) {
+    .mt-res{
+        margin-top: 30px;
+    }
+    
+}
+@media (max-width: 991px) {
+  header {
+    position: relative;
+  }
+}
+@media (min-width: 992px) {
+  .has-pattern-button {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .sub_title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .flex-w {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+@media (min-width: 992px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+@media (min-width: 768px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+@media (min-width: 576px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+@media (min-width: 992px) {
+  .text-w {
+    max-width: 498px;
+    margin-left: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .text-w .right-side .sub_title {
+    font-size: 58px;
+    line-height: 60px;
+  }
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  .mb {
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .top {
+    position: absolute;
+    top: -220px;
+  }
+}
+@media (min-width: 992px) {
+  .buttom {
+    position: absolute;
+    bottom: -109px;
+    left: 10%;
+  }
+}
+@media (min-width: 992px) {
+  .right {
+    position: absolute;
+    top: -80px;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 720px;
+    text-align: center;
+  }
+}

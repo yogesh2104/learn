@@ -1,0 +1,17 @@
+[
+    {
+    "heading":"our quality",
+    "para": "Lorem ipsum dolor sit amet, conse elit, sedid do eiusmod tempor incidi ut labore et dolore magna aliqua. Quis ipsum usendi laboris mollit",
+    "img_link":"https://cdn.shopify.com/s/files/1/0905/2012/files/about-09.jpg"
+    },
+    {
+    "heading":"our community",
+    "para": "Lorem ipsum dolor sit amet, conse elit, sedid do eiusmod tempor incidi ut labore et dolore magna aliqua. Quis ipsum usendi laboris mollit",
+    "img_link":"https://cdn.shopify.com/s/files/1/0905/2012/files/about-05.jpg"
+    },
+    {
+    "heading":"our sustainability",
+    "para": "Lorem ipsum dolor sit amet, conse elit, sedid do eiusmod tempor incidi ut labore et dolore magna aliqua. Quis ipsum usendi laboris mollit",
+    "img_link":"https://cdn.shopify.com/s/files/1/0905/2012/files/about-04.jpg"
+    }
+]
