@@ -109,7 +109,26 @@ label {
 
 
 
+/* !Guide text CSS Start */
+.h4_font{
+    font-size: 18px;
+}
+.text-deco {
+    text-decoration: underline!important;
+}
+.pd-start{
+    padding-inline-start: 15px;
+}
+ol{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+ol li{
+    margin-bottom: 10px;
+    font-size: 13px;
+}
 
+/* !Guide text CSS END */
 
 
 
