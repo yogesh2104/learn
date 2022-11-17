@@ -6,16 +6,19 @@
 
 body {
     font-family: 'VerlagBook' sans-serif;
-    letter-spacing: 0.5px;
-    font-size: 15px;
     font-variant-numeric: lining-nums;
-    -webkit-font-smoothing: antialiased;
 }
 .container {
     padding-right: 10px;
     padding-left: 10px;
 }
-
+.padding_30{
+    padding-left: 30px;
+    padding-right: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .pd-30{
     padding:30px 0;
 }
@@ -43,11 +46,6 @@ p{
     border-image: linear-gradient(to left,#fff 1%,#a40001 50%,#fff 100%) 0 0 100% 0/0 0 3px 0 stretch
 }
 
-.fix-left{
-    position: sticky;
-    top: 25px;
-}
-
 /* !Left Side Form CSS Start */
 .custom-form{
     background-color: #fff;
@@ -58,14 +56,24 @@ p{
     margin-bottom: 15px;
     padding: 2px 13px;
 }
-label {
+.d-block{
     display: inline-block;
+    padding: 5px;
+}
+.d-block label{
+    font-size: 14px;
+}
+input[type=radio] {
+    border: 0px;
+    height: 10px;
+}
+
+
+
+label {
     max-width: 100%;
     margin-bottom: 5px;
     font-weight: bold;
-}
-.font-18{
-    font-size: 18px;
 }
 .mark_red{
     color: red;
@@ -73,36 +81,37 @@ label {
 .mark_black{
     color:#000
 }
-
-.radio-new {
-    display: inline-block;
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-    font-weight: normal;
-    /* user-select: none; */
-    text-align: left;
-    padding-right: 20px;
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid rgb(155, 150, 150);
 }
-.radio-new input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+.from_Group label{
+    font-size: 18px;
 }
-.radio-check {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #eee;
-    border-radius: 50%;
-    border: 1px solid #a40001;
-    box-shadow: 0 1px 6px 0 #a4000154;
+.m{
+    margin-left: 15px;
+    width: 95%;
 }
 
+.fix-left{
+    /* position: sticky; */
+    top: 25px;
+}
+.input_check{
+    margin-left: 20px;
+    margin-right: 7px;
+}
+
+
+.font-12{
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+.d-block label input{
+    margin-right: 10px;
+}
 /* !Left Side Form CSS End */
 
 
@@ -117,13 +126,7 @@ label {
     text-align: center;
 }
 .padding{
-    padding: 10px 10px;
-}
-label{
-    display: inline-block;
-    max-width: 100%;
-    margin-bottom: 5px;
-    font-weight: bold;
+    padding: 4px 16px;
 }
 .contact_title{
     padding: 10px;
@@ -143,9 +146,9 @@ label{
 .form_control{
     display: block;
     width: 100%;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
+    height: 33px;
+    padding: 3px 12px;
+    font-size: 12px;
     line-height: 1.42857143;
     color: #555;
     background-color: #fff;
@@ -172,7 +175,7 @@ label{
 }
 .input-group-addon {
     padding: 6px 12px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: normal;
     line-height: 1;
     color: #555;
@@ -198,8 +201,8 @@ label{
     width: 100%;
     margin-bottom: 0;
     height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
+    padding: 1px 12px;
+    font-size: 11px;
     line-height: 1.42857143;
     color: #555;
     background-color: #fff;
@@ -215,9 +218,58 @@ textarea {
 textarea.form_control {
     height: auto;
 }
-
-
-
+.mrgin-top{
+    margin-top: 40px;
+}
+.mx-400{
+    width:320px
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.submit-btn{
+    max-width: 200px;
+    margin: inherit;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.submit{
+    width: 100%;
+    display: block;
+    margin: 2em auto 0;
+    background: #a40001;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    padding: 3px;
+    color: #fff;
+}
+.file_up{
+    display: none;
+}
+.img_btn{
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: linear-gradient(to right,#df2626,#a40001);
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.img{
+    width: 200px;
+    padding: 20px 10px;
+    
+}
 /* !Right Side Form CSS End */
 
 
@@ -228,7 +280,7 @@ textarea.form_control {
 
 /* !Guide text CSS Start */
 .h4_font{
-    font-size: 18px;
+    font-size: 16px;
 }
 .text-deco {
     text-decoration: underline!important;
@@ -242,39 +294,7 @@ ol{
 }
 ol li{
     margin-bottom: 10px;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 /* !Guide text CSS END */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media (min-width: 768px){
-.container {
-    width: 750px;
-}
-} */

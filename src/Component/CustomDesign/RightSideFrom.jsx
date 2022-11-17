@@ -1,4 +1,5 @@
 import React from 'react'
+//import ReCAPTCHA from "react-google-recaptcha"; // npm install --save react-google-recaptcha
 
 const RightSideFrom = () => {
   return (
@@ -9,7 +10,7 @@ const RightSideFrom = () => {
                 <b>Contact Infromation</b>
             </p>
         </div>
-        <div className='col-md-12 p-0'>
+        <div className='col-md-12 p-0 ml-3'>
             <div className='from_Group col-md-12'>
                 <label htmlFor='fname'>First Name<span className='mark_red'>*</span></label>
                 <input type="text" className="form_control" id="fname" placeholder='Frist Name'/>
@@ -53,6 +54,38 @@ const RightSideFrom = () => {
             <div className='from_Group col-md-12'>
                 <label htmlFor='address'>Address<span className='mark_red'>*</span></label>
                 <textarea rows="2" cols="40" placeholder="Address" name="address" id="address" class="form_control mb-30"></textarea>
+            </div>
+
+            <div className='from_Group col-md-12'>
+                <label htmlFor='country'>Country<span className='mark_red'>*</span></label>
+                <select className='form_control' name="country" id="country">
+                    <option>India</option>
+                </select>
+            </div>
+
+            <div className='from_Group col-md-12'>
+                <label htmlFor='state'>State<span className='mark_red'>*</span></label>
+                <select className='form_control' name="state" id="state">
+                    <option>Gujarat</option>
+                </select>
+            </div>
+
+            <div className='from_Group col-md-12'>
+                <label htmlFor='city'>City<span className='mark_red'>*</span></label>
+                <input type="text" className="form_control" id="city" placeholder='City'/>
+            </div>
+
+            <div className='from_Group col-md-12'>
+                <label htmlFor='post_code'>Post Code<span className='mark_red'>*</span></label>
+                <input type="text" className="form_control" id="post_code" placeholder='Post Code'/>
+            </div>
+
+            <div className='from_Group col-md-12'>
+            {/* <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} /> */}
+            </div>
+
+            <div className='col-md-12 margin-top from_Group'>
+                <button className='btn submit submit-btn'>Submit</button>
             </div>
         </div>
     </div>
