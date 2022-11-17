@@ -31,7 +31,8 @@ const CenterStone = () => {
   return (
     <>
       <div className="bg-color">
-        <div className="grid grid-rows-1 mt-2">
+        <h4 className="ml-3">Shape :</h4>
+        {/* <div className="grid grid-rows-1 mt-2">
           <div className="grid grid-cols-6 gap-1">
             {results?.Shape?.map((item, index) => {
               return (
@@ -50,7 +51,38 @@ const CenterStone = () => {
               );
             })}
           </div>
+        </div> */}
+        <div className="m">
+          <label className="add-non-active">
+            <img src="https://evdiamonds.com/assets/uploads/parameter/164672109375.png" alt="dia" className="max-shape-w"/>
+            <p className="title-shape">Round</p>
+          </label>
+          <label className="add-non-active">
+            <img src="https://evdiamonds.com/assets/uploads/parameter/164672109375.png" alt="dia" className="max-shape-w"/>
+            <p className="title-shape">Round</p>
+          </label>
+          <label className="add-non-active">
+            <img src="https://evdiamonds.com/assets/uploads/parameter/164672109375.png" alt="dia" className="max-shape-w"/>
+            <p className="title-shape">Round</p>
+          </label>
+          <label className="add-non-active">
+            <img src="https://evdiamonds.com/assets/uploads/parameter/164672109375.png" alt="dia" className="max-shape-w"/>
+            <p className="title-shape">Round</p>
+          </label>
+          <label className="add-non-active">
+            <img src="https://evdiamonds.com/assets/uploads/parameter/164672109375.png" alt="dia" className="max-shape-w"/>
+            <p className="title-shape">Round</p>
+          </label>
+          <label className="add-non-active">
+            <img src="https://evdiamonds.com/assets/uploads/parameter/164672109375.png" alt="dia" className="max-shape-w"/>
+            <p className="title-shape">Round</p>
+          </label>
+          <label className="add-non-active">
+            <img src="https://evdiamonds.com/assets/uploads/parameter/164672109375.png" alt="dia" className="max-shape-w"/>
+            <p className="title-shape">Round</p>
+          </label>
         </div>
+
       </div>
     </>
   );

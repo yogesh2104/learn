@@ -67,7 +67,7 @@ const ProductListTab = () => {
     // return () => clearTimeout(getSliderFilterData)
 
     setTimeout(() => {
-      fetchFilterdata()
+      // fetchFilterdata()
     }, 1000);
   }, [getShape,getMetalType]);
   

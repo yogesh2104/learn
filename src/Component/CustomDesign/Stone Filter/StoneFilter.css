@@ -1,7 +1,8 @@
 .bg-color {
   background-color: #f2f2f2;
 }
-/* .shape_label {
+
+.add-non-active {
   box-shadow: 0 1px 4px 0 rgb(89 0 4 / 20%);
   margin: 3px 5px 0 0;
   border-radius: 5px;
@@ -13,63 +14,82 @@
   padding: 2px 7px 1px 5px;
   cursor: pointer;
   font-weight: normal;
-  display: block;
-} */
-
-.grid {
-  display: grid;
+  background: #fff;
+}
+.ml-3{
+  margin-left: 10px;
+  font-size: 14px;
+  padding-top: 10px;
+}
+.max-shape-w {
+  max-width: 36px;
+  height: 36px;
+}
+img {
+  vertical-align: middle;
+}
+.title-shape {
+  font-size: 10px;
 }
 
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
-}
-.grid-cols-6 {
-  /* grid-template-columns: repeat(6, minmax(0, 1fr)); */
-  grid-template-columns: repeat(9, minmax(0, 1fr));
-}
-.relative {
-  position: relative;
-}
-.absolute {
-  position: absolute;
-}
-.inset-x-0 {
-  left: 0px;
-  right: 0px;
-}
 
-.bottom-0 {
-  bottom: 0px;
-}
 
-.gap-1 {
-  gap: 0.25rem;
-}
-.flex {
+/* !SideStone CSS start */
+.d-flex{
   display: flex;
 }
-.mt-2 {
-  margin-top: 0.5rem;
+.text-right{
+  text-align: right !important;
 }
-.justify-center {
-  justify-content: center;
+.pdd{
+  padding: 6px 15px;
+}
+.new-add-btnn {
+  color: #fff;
+  background-color: #df2626;
+  padding: 10px 30px;
+  border-radius: 0;
+  border-color: transparent;
+  border: 0;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.btnn{
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.table-responsive {
+  min-height: .01%;
+  overflow-x: auto;
+}
+.table {
+  width: 100%;
+  /* max-width: 100%; */
+  margin-bottom: 20px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* width: 100%; */
+  border: 1px solid #ddd;
+  background-color: transparent;
 }
 
-.border {
-  border-width: 1px;
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
 }
-.h-9 {
-  height: 2.25rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.p-0\.5 {
-  padding: 0.125rem;
-}
-
-.p-0 {
-  padding: 0px;
-}
+/* !SideStone CSS end */

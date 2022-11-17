@@ -7,8 +7,8 @@ const LeftSideFrom = () => {
   const [isRadio, setIsRadio] = useState("rings");
   const [linkRadio, setLinkRadio] = useState('img')
 
-  const [centerStone, setCenterStone] = useState(true)
-  const [sideStone , setSideStone] = useState(false)
+  const [centerStone, setCenterStone] = useState(false)
+  const [sideStone , setSideStone] = useState(true)
 
   const handleCenterStone=()=>{
     setCenterStone(!centerStone)
