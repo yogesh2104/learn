@@ -10,6 +10,7 @@ const RightSideFrom = () => {
                 <b>Contact Infromation</b>
             </p>
         </div>
+        <form>
         <div className='col-md-12 p-0 ml-3'>
             <div className='from_Group col-md-12'>
                 <label htmlFor='fname'>First Name<span className='mark_red'>*</span></label>
@@ -45,11 +46,11 @@ const RightSideFrom = () => {
             <p className='font-18 mb-0 text-center'>Register Details</p>
             <div className='from_Group col-md-12'>
                 <label htmlFor='password'>Password<span className='mark_red'>*</span></label>
-                <input type="password" className="form_control" id="password" placeholder='Password'/>
+                <input type="password" className="form_control" id="password" placeholder='Password' autoComplete='off'/>
             </div>
             <div className='from_Group col-md-12'>
                 <label htmlFor='com-password'>Confirm Password<span className='mark_red'>*</span></label>
-                <input type="password" className="form_control" id="com-password" placeholder='Confirm Password'/>
+                <input type="password" className="form_control" id="com-password" placeholder='Confirm Password' autoComplete='off'/>
             </div>
             <div className='from_Group col-md-12'>
                 <label htmlFor='address'>Address<span className='mark_red'>*</span></label>
@@ -88,6 +89,7 @@ const RightSideFrom = () => {
                 <button className='btn submit submit-btn'>Submit</button>
             </div>
         </div>
+        </form>
     </div>
     </>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
-import Breadcrumb from "react-bootstrap/Breadcrumb";
-import { FaHome } from "react-icons/fa";   //npm install react-icons --save
+import Breadcrumb from "react-bootstrap/Breadcrumb"; //! npm install react-bootstrap bootstrap
+import { FaHome } from "react-icons/fa";   //! npm install react-icons --save
 import './CustomDesign.css'
 import LeftSideFrom from './LeftSideFrom';
 import RightSideFrom from './RightSideFrom';

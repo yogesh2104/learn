@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+
+.parallax {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    display: grid !important;
+    /* justify-content: center; */
+    align-items: center;
+}
+.parallax_bg {
+    background-image: url("https://www.meraya.one/webassets/images/staticpage/why-img1.png");
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+.banner-div {
+    max-width: 55%;
+    padding: 4rem 0px
+}
+.title {
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #034259;
+    line-height: 1.5;
+}
+.p-text{
+    /* color: #151515; */
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #034259;
+}
+.why-section{
+    padding: 4.5rem 0rem;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.img_deal{
+    max-width: 100%;
+}
+.text-center {
+    text-align: center!important;
+}
+.bg{
+    background-color: #e0ebf1;
+}
+.horizontal{
+    display: inline-block;
+}
+.budget_friend_title{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #034259;
+    font-weight: 600;
+}
+.ul_class li{
+    list-style: none;
+    margin-bottom: 2rem;
+    padding-left: 20px;
+}
+.h1_class{
+    text-transform: capitalize;
+}
+
+.item img{
+    display: block;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+.labels{
+    opacity: 0.4;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.option_itm:hover{
+    background-color: rgb(226, 230, 226);
+}
+.none_display {
+    display: none;
+}
+.option_itm .checkbox:checked ~ .option_in.main {
+    border-color: #2825c4;
+    z-index: 99999;
+}
+img .img_opacity:checked{
+    filter: brightness(0) invert(1);
+}
+.item .main{
+    padding: 20px;
+}
+
+
+.demo{
+    opacity: 1;
+    display: inline-block;
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 30px;
+}
+  
+
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+.banner-div {
+    max-width: 80%;
+    padding: 3rem 0px;
+}
+}

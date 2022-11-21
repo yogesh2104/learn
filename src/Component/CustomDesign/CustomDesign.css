@@ -67,7 +67,10 @@ input[type=radio] {
     border: 0px;
     height: 10px;
 }
-
+.row {
+    margin-right: 0px;
+    margin-left: -1px;
+}
 
 
 label {
@@ -270,9 +273,25 @@ textarea.form_control {
     padding: 20px 10px;
     
 }
+@media (max-width:767px) {
+    .custom_box{
+        margin-top: 10px;
+    }
+    
+}
 /* !Right Side Form CSS End */
 
-
+.none_display {
+    display: none;
+  }
+  .option_item .checkbox:checked ~ .option_inner.main {
+    border-color: #2825c4;
+    /* z-index: 99999; */
+  }
+  img .img_opacity:checked{
+    filter: brightness(0) invert(1);
+  }
+  
 
 
 
@@ -296,5 +315,6 @@ ol li{
     margin-bottom: 10px;
     font-size: 12px;
 }
+
 
 /* !Guide text CSS END */
