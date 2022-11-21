@@ -1,0 +1,57 @@
+.padding{
+    padding: 3rem 0rem;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.navlink{
+    color: #151515;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+p{
+    margin: 0 0 10px;
+}
+.title{
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #034259;
+    line-height: 1.5;
+}
+.head_title{
+    color: #04425b;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 15px;
+    padding-top: 0px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.head_title_ul{
+    color: #04425b;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.pd-20{
+    padding-left: 20px;
+}
+.list_style{
+    list-style: decimal;
+}
+.txt{
+    color: #151515;
+    letter-spacing: 1px;
+}
+.bg{
+    background-color: #e5eef3;
+}
+.activeRoute {
+    background-color: yellow;
+    border-bottom: 0.4rem solid teal;
+    cursor: not-allowed;
+  }

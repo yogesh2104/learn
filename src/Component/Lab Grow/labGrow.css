@@ -84,6 +84,7 @@
 }
 .option_itm:hover{
     background-color: rgb(226, 230, 226);
+    border-radius: 10px;
 }
 .none_display {
     display: none;
@@ -92,10 +93,13 @@
     border-color: #2825c4;
     z-index: 99999;
 }
-img .img_opacity:checked{
+/* img .img_opacity:checked{
     filter: brightness(0) invert(1);
-}
+} */
 .item .main{
+    padding: 20px;
+}
+.padd{
     padding: 20px;
 }
 
