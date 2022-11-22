@@ -12,6 +12,9 @@ import ReturnPolicy from './Component/Terms/ReturnPolicy';
 import Policy from './Component/Terms/Policy';
 import Terms from './Component/Terms/Terms';
 
+
+import ContactUs from './Component/ContactUs/ContactUs';
+
 function App() {
   return (
   <>
@@ -22,7 +25,7 @@ function App() {
     <Route path='/labGrow'  element={<LabGrow/>}/>
     <Route path='/customDesign' element={<CustomDesign/>}/>
 
-
+    <Route path='/contact-us' element={<ContactUs/>}/>
     
     <Route path='/terms' element={<Terms/>}/>
     <Route path='/deliveryInfo' element={<DeliveryInfo/>}/>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,400&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.keepInTouch{
+    padding: 110px 0px 58px 0px;
+}
+.font{
+    font-size: 50.52px;
+    line-height: 56.8px;
+    letter-spacing: 1px;
+    color:#040202;
+    font-family: 'Mulish', sans-serif;
+}
+.mr{
+    margin: 0px 0px 19px 0px;
+}
+
+.mr2{
+    margin: 0px 0px 67px 0px;
+}
+/* .annim{
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,-webkit-box-shadow .3s;
+} */
+.hrefA{
+    color: rgba(4, 2, 2, 0.5);
+    text-decoration: underline;
+}
+.inpCls{
+    border-bottom: 15px;
+    color: #757575;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: #757575;
+    background-color: #FAFAFA00;
+    padding: 13px 15px 13px 15px;
+}
+.divHeight{
+    text-align: center;
+    background: #F1ECEA;
+    padding: 52px 30px 49px 30px;
+}
+
+.boxIcon{
+    margin: 0px 0px 24px 0px;
+}
+.BsIcon{
+    width: 30px;
+    height: 30px;
+}
+.boxTitle{
+    color:#040202;
+    font-size: 28.43px;
+    line-height: 32px;
+    margin-bottom: 11px;
+}
+.pdB{
+    padding-bottom: 4px;
+    height: 20px;
+    font-weight: bold;
+}
+.boxContent{
+    margin-bottom: 41px;
+    color: #363636;
+    font-family: Outfit;
+    font-weight: 300;
+    font-style: normal;
+}
+.boxGoMore{
+    color:#040202;
+    font-size: 12px;
+    font-weight: 600;
+    transition: .3s all;
+}
+.anchorTag{
+    box-shadow: none;
+    text-decoration: none;
+    outline: none!important;
+    color:#040202;
+}
+.anchorTag:hover{
+    color:#040202;
+}
+.btnCls{
+    padding: 13px 40px 13px 40px;
+    margin: 9px 0px 0px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    background: #040202;
+    color:  #ffffff;
+}
+.transiton{
+    transition: .3s all;
+    cursor: pointer;
+    outline: none!important;
+}
+.newsletter{
+    background-position: center center;
+    background-image: url("https://auriane.jwsuperthemes.com/wp-content/uploads/2022/01/568d5d183ae6ad59cacae0408c3d8d54-1-scaled.jpg");
+    background-size: cover;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 48px 0px 43px 0px;
+    background-color:#d9d8d8;
+}
+.p{
+    color: #A54201;
+}
+.joinBtn{
+    /* padding: 10px 35px 10px 35px; */
+    padding: 13px 35px 13px 35px;
+    color: #FFFFFF;
+    background: black;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    font-weight: 300;
+}
+.ml{
+    margin-left: 10px;
+}
+
+@media (min-width:992px){
+    .mb{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 992px){
+.font {
+    font-size: 35.52px;
+    line-height: 40.8px;
+    color:#040202;
+    font-family: 'Mulish', sans-serif;
+}
+}
