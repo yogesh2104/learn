@@ -173,59 +173,59 @@ const Policy = () => {
                 We may utilize the data we gather about you (unless otherwise
                 confined by law) to:
               </p>
-              <ul class="pd-20">
-                <li class="txt">
+              <ul className="pd-20">
+                <li className="txt">
                   Facilitate your buys and offer the services you demand
                 </li>
-                <li class="txt">Confirm and track your request</li>
-                <li class="txt">
+                <li className="txt">Confirm and track your request</li>
+                <li className="txt">
                   Respond to your remarks, request, and demands
                 </li>
-                <li class="txt">
+                <li className="txt">
                   Compare and survey your data for mistakes, oversights, and
                   precision
                 </li>
-                <li class="txt">Prevent and distinguish extortion or misuse</li>
-                <li class="txt">
+                <li className="txt">Prevent and distinguish extortion or misuse</li>
+                <li className="txt">
                   Facilitate your guarantee or warranty, for example, cleanings,
                   fixes, or resizes of your items
                 </li>
-                <li class="txt">
+                <li className="txt">
                   Provide and improve the services we provide and item offerings
                 </li>
-                <li class="txt">
+                <li className="txt">
                   Improve advertising and in general, the entire client
                   experience
                 </li>
-                <li class="txt">Identify your item and service inclinations</li>
-                <li class="txt">
+                <li className="txt">Identify your item and service inclinations</li>
+                <li className="txt">
                   Offer you customized content which might be on our Site,
                   different sites, cell phones or applications, or different
                   channels (including online and offline services)
                 </li>
-                <li class="txt">
+                <li className="txt">
                   Understand our client inclinations, demographics, interests,
                   and conduct
                 </li>
-                <li class="txt">
+                <li className="txt">
                   Administer and satisfy our challenges and different
                   advancements
                 </li>
-                <li class="txt">
+                <li className="txt">
                   Process or react to your application for present or future
                   profession openings
                 </li>
-                <li class="txt">
+                <li className="txt">
                   Contact you in regards to items and administrations (of Meraya
                   or our accomplices) that we accept might bear some
                   significance with you
                 </li>
-                <li class="txt">
+                <li className="txt">
                   Comply with relevant lawful necessities and Meraya
                   arrangements and strategies
                 </li>
               </ul>
-              <p class="txt">
+              <p className="txt">
                 We may combine the data you give to us after some time, and we
                 may consolidate such data with data that is openly accessible,
                 gathered through cookies and different advances, and data that
@@ -236,11 +236,11 @@ const Policy = () => {
               <p className="head_title_ul">
                 DATA THAT WE MAY SHARE WITH OTHERS
               </p>
-              <p class="txt">
+              <p className="txt">
                 We may share your data, including personal data, in the
                 following cases:
               </p>
-              <ul class="pd-20">
+              <ul className="pd-20">
                 <li class="txt list_style">
                   <b>Meraya and affiliates:</b> We may impart your personal
                   information to affiliated entities, e.g., any corporate
@@ -320,13 +320,13 @@ const Policy = () => {
                 </li>
               </ul>
               <p className="head_title_ul">CHILDREN UNDER 13</p>
-              <p class="txt">Meraya does not intentionally collect individual information from people aged less than 13. On the off chance that we discover that we have collected individual data from an individual younger than 13, we will immediately erase that information from our frameworks.</p>
-              <p class="head_title_ul"> CONNECTIONS</p>
-              <p class="txt">Our Site may give to third-party sites which are beyond our ability to do anything about and not secured by this Privacy Policy. We urge you to survey the protection strategies posted on these (and all) sites.</p>
-            <p class="head_title_ul">SECURITY</p>
-            <p class="txt">We use a fair mix of physical and electronic security advancements, methods, and authoritative measures to help shield your data from unapproved access, use, or exposure. While we endeavor to protect your data, we can't ensure or warrant the security of any data you uncover or transmit to us.</p>
-            <p class="head_title_ul">UPDATING YOUR INFORMATION</p>
-            <p class="txt">If you have made a Meraya account, you can survey and change certain individual data identifying with your Meraya account whenever by signing on to your record. Otherwise, to find out more, it would be ideal if you get in touch with us.</p>
+              <p className="txt">Meraya does not intentionally collect individual information from people aged less than 13. On the off chance that we discover that we have collected individual data from an individual younger than 13, we will immediately erase that information from our frameworks.</p>
+              <p className="head_title_ul"> CONNECTIONS</p>
+              <p className="txt">Our Site may give to third-party sites which are beyond our ability to do anything about and not secured by this Privacy Policy. We urge you to survey the protection strategies posted on these (and all) sites.</p>
+            <p className="head_title_ul">SECURITY</p>
+            <p className="txt">We use a fair mix of physical and electronic security advancements, methods, and authoritative measures to help shield your data from unapproved access, use, or exposure. While we endeavor to protect your data, we can't ensure or warrant the security of any data you uncover or transmit to us.</p>
+            <p className="head_title_ul">UPDATING YOUR INFORMATION</p>
+            <p className="txt">If you have made a Meraya account, you can survey and change certain individual data identifying with your Meraya account whenever by signing on to your record. Otherwise, to find out more, it would be ideal if you get in touch with us.</p>
             </div>
           </div>
         </div>

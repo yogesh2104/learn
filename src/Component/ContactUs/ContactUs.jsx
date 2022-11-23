@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "./contactus.css";
-import { BsPatchQuestion, BsStars, BsArrowUpRight, BsArrowRight} from "react-icons/bs";
-import { TfiEmail } from "react-icons/tfi";
+import { BsPatchQuestion, BsStars, BsArrowUpRight, BsArrowRight} from "react-icons/bs"; // !npm install react-icons 
+import { TfiEmail } from "react-icons/tfi"; 
 
 const ContactUs = () => {
   const [successMsg, setSuccessMsg] = useState('')
@@ -12,7 +12,10 @@ const ContactUs = () => {
       phone:'', 
       message:''
     }
-  )
+  );
+  const [newsEmail, setNewsEmail] = useState({NewsEmail:''})
+  const [getValidEmail, setValidEmail] = useState('')
+  const [joinMsg, setJoinMsg] = useState('')
   const [validation , setvalidation] = useState({
     name:'',
     email:'',
@@ -64,7 +67,37 @@ const ContactUs = () => {
 
     })
   }
-  console.log("sdsafsafs:",successMsg);
+  // console.log("sdsafsafs:",joinMsg);
+  const JoinButtonChange=(event)=>{
+    event.preventDefault()
+    let er=getValidEmail
+    if(!newsEmail.NewsEmail.trim()){
+      er="Email is Required."
+    }
+    else if(!newsEmail.NewsEmail.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|("."))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+      er="Enter Valid Email."
+    }
+    else{
+      er=''
+    }
+    setValidEmail(er)
+    if(newsEmail===''){
+      setJoinMsg("thank you")
+    }
+  console.log("in:");
+    
+    setNewsEmail('')
+  }
+  const getEmail=(e)=>{
+    e.preventDefault()
+    const {name, value} = e.target;
+    setNewsEmail(()=>{
+      return{...newsEmail,
+      [name]:value
+  }})
+  }
+  
+  // console.log("asda",newsEmail);
   return (
     <>
       <section className="keepInTouch">
@@ -131,7 +164,7 @@ const ContactUs = () => {
             <div className="d-flex justify-content-center">
                 <button className="btnCls transiton" type="submit">Send Message</button>
             </div>
-            <div className="d-flex justify-content-center mt-4 text-success"><span className="border p-3 text-center">{successMsg}</span></div>
+            <div className={`d-flex justify-content-center mt-4 text-success ${successMsg?'visible':'invisible'}`}><span className="border p-3 text-center">{successMsg}</span></div>
           </div>
         </form>
         </div>
@@ -190,9 +223,13 @@ const ContactUs = () => {
         </div>
         <div className="row">
           <div className="col-lg-4"></div>
-          <div className="col-lg-3 mb"><input className="w-100 inpCls" placeholder="Email Address..."/></div>
-          <div className="col-lg-2"><button className="joinBtn">Join<BsArrowRight className="ml"/></button></div>
+          <div className="col-lg-3 mb"><input className="w-100 inpCls" placeholder="Email Address..." name="NewsEmail" onChange={getEmail}/>
+          {getValidEmail && <p className="text-danger">{getValidEmail}</p>}
+          </div>
+          <div className="col-lg-2"><button className="joinBtn" onClick={JoinButtonChange}>Join<BsArrowRight className="ml"/></button>
+          </div>
           <div className="col-lg-3"></div>
+          <div className={`d-flex justify-content-center mt-4 text-success ${joinMsg?'visible':'invisible'}`}><span className="border p-3 text-center">{joinMsg}</span></div>
         </div>
         <div className="d-flex justify-content-center"><p className="w-50 mt-3 text-center">By signing up you agree with our Terms & Conditions and Privacy Policy. To opt out, click Unsubscribe in our emails.</p></div>
       </section>

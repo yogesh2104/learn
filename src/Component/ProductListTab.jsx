@@ -6,16 +6,15 @@ import Rings from "./image/ring.svg";
 import { Multiselect } from "multiselect-react-dropdown";
 import Select from 'react-select';
 
-let getallId= []
-
 const ProductListTab = () => {
   const [data, setData] = useState([]);
   const [filterData, setFilterData] = useState([]);
 
 
   const [getShape, setShape] = useState([]);
-
   const [getShapeId, setShapeId] = useState([])
+
+
   const [getMetalType, setMetalType] = useState([]);
   const [getWeight, setWeight] = useState([]);
   const [getSetting, setSetting] = useState([]);
@@ -24,54 +23,47 @@ const ProductListTab = () => {
 
   //! Onclick clear All button clear all data
   const clearShapeData=()=>{
-    getShape.splice(0,getShape.length)
-    setShape([])
+    getShapeId.splice(0,getShapeId.length)
+    setShapeId([])
   }
 
 
   //! MultiSelect OnRemove Function
-  const onremove=(data)=>{
-    setShapeId(data);
-    console.log("remove data:", getShapeId)
+  const onremove=(selectedList)=>{
+    setShapeId(selectedList);
+    // console.log("remove data:", getShapeId)
+    // console.log("getShaped", getShapeId)
   }
+  const  onselect=(selectedList)=>{
+    setShapeId(selectedList)
+    // console.log("getShapeId", getShapeId)
 
-  //! MultiSelect OnSelect Function
-  //? onSelect={e=>e.filter(itm=> setShape([...getShape, itm.id]) )}
-
-  const  onselect=(data)=>{
+    // console.log("selectedList",selectedList)
+    // console.log("selectedItem",selectedItem.id)
     // setShape(data)
-    data.filter(item=>setShapeId([...getShapeId,item.id]))
-    console.log("select data:", getShapeId)
-
-    // if(!getShape.includes(data)){
-    //   data.filter(item=>setShape([...getShape,item.id]))
-    // }
+   
+    // console.log("select data:", getShapeId)
   }
-
-  // console.log("getShape",getShape)
-
-
-
   useEffect(() => {
-    getData();
-  }, []);
+    getData();    
+  }, [ ]);
 
 
-  
+  // console.log("all Id:", getShapeId)
 
   useEffect(() => {
 
-    // const getSliderFilterData = setTimeout(() => {
-    //   fetchFilterdata();
-    // }, 1000)
-    // return () => clearTimeout(getSliderFilterData)
+    const getSliderFilterData = setTimeout(() => {
+      fetchFilterdata();
+    }, 1000)
+    return () => clearTimeout(getSliderFilterData)
 
-    setTimeout(() => {
-      // fetchFilterdata()
-    }, 1000);
-  }, [getShape,getMetalType]);
+    // setTimeout(() => {
+    //   fetchFilterdata()
+    // }, 1000);
+  }, [ ]);
   
-
+// console.log("id", getShapeId);
 
 
   const getData = async () => {
@@ -94,17 +86,17 @@ const ProductListTab = () => {
   };
 
   const weightData = [
-    { label: "Less Than 2 Grams", min: 0 , max: 2},
-    { label: "2 Grams to 4 Grams", min:2 , max: 4},
-    { label: "4 Grams to 6 Grams", min: 4 , max:6},
-    { label: "6 Grams And Above" , min: 6 , max:99},
+    { id:1, label: "Less Than 2 Grams", min: 0 , max: 2},
+    { id:2, label: "2 Grams to 4 Grams", min:2 , max: 4},
+    { id:3, label: "4 Grams to 6 Grams", min: 4 , max:6},
+    { id:4, label: "6 Grams And Above" , min: 6 , max:99},
   ];
   const PriceData = [
-    { label: "Under $100" ,min:0 , max:100},
-    { label: "$100 to $200",min:100 , max:200 },
-    { label: "$200 to $300",min:200 , max:300 },
-    { label: "$300 to $400" ,min:300 , max:400},
-    { label: "$400 to $500",min:400 , max:500 },
+    { id:1, label: "Under $100" ,min:0 , max:100},
+    { id:2, label: "$100 to $200",min:100 , max:200 },
+    { id:3, label: "$200 to $300",min:200 , max:300 },
+    { id:4, label: "$300 to $400" ,min:300 , max:400},
+    { id:5, label: "$400 to $500",min:400 , max:500 },
   ];
 
 
@@ -113,17 +105,17 @@ const ProductListTab = () => {
     myHeaders.append("Accept", "application/json");
 
     let formdata = new FormData();
-    // formdata.append("draw", "1");
-    // formdata.append("start", "0");
-    // formdata.append("length", "25");
+    formdata.append("draw", "1");
+    formdata.append("start", "0");
+    formdata.append("length", "12");
     // formdata.append("metal_type", getMetalType);
-    // formdata.append("diamond_type", getShape);
+    // formdata.append("diamond_type", getShapeId);
     // formdata.append("setting_type", getSetting);
     // formdata.append("weight_min", getWeight.min);
     // formdata.append("weight_max", getWeight.max);
     // formdata.append("price_min", getPrice.min);
     // formdata.append("price_max", getPrice.max);
-
+  
     let requestOptions = {
       method: "POST",
       headers: myHeaders,
@@ -231,6 +223,7 @@ const ProductListTab = () => {
               options={data?.Metal_Type}
               displayValue="name"
               style={style}
+              key={data?.id}
               placeholder="Metal Type"
               hideSelectedList={true}
               showCheckbox={true}
@@ -243,13 +236,21 @@ const ProductListTab = () => {
               options={data?.Shape}
               displayValue="name"
               style={style}
+              key={data?.id}
               placeholder="Diamonds Type"
               hideSelectedList={true}
               showCheckbox={true}
               onRemove={onremove}
               onSelect={onselect}
               // onSelect={(e)=>{setShape(e)}}
-              // onSelect={e=>e.filter(itm=> setShape([...getShape, itm.id]) )}
+              // onSelect={e=>e.filter(itm=> setShape(function (preVal){
+              //   if(e.includes(itm)){
+              //    return([...getShapeId])
+              //   }
+              //   else{
+              //     return([...getShapeId, itm.id])
+              //   }
+              // }) )}
             />
           </div>
           <div className="col-md-2">
@@ -260,6 +261,7 @@ const ProductListTab = () => {
               onChange={handleWeight}
               name="label"
               options={weightData}
+              kry={weightData.id}
           />
           </div>
           <div className="col-md-2">
@@ -269,6 +271,7 @@ const ProductListTab = () => {
               placeholder="Setting Type"
               hideSelectedList={true}
               style={style}
+              key={data?.key}
               showCheckbox={true}
               onSelect={e=>e.filter(itm=> setSetting([...getSetting, itm.id]) )}
               
@@ -281,6 +284,7 @@ const ProductListTab = () => {
               isClearable={false}
               onChange={handlePrice}
               name="label"
+              key={PriceData.id} 
               options={PriceData}
           />
           </div>
@@ -295,11 +299,9 @@ const ProductListTab = () => {
         <div className="text-denger ml-2">
           <ul className="select_filter">
             <li className="res">Result({filterData?.recordsFiltered})</li>
-            {getShape?.map((item,index)=>{
+            {getShapeId?.map((item,index)=>{
               return(
-                <>
                  <li key={index} className="sec"><span>{item.name}</span>X</li>
-                </>
               )
             })}
             <li className="clear_all" onClick={clearShapeData}>Clear All</li>
@@ -309,7 +311,6 @@ const ProductListTab = () => {
       <div className="product-page-div container">
         {filterData?.data?.map((item,index) => {
           return (
-            <>
               <div className="product-div find-img" key={index}>
                 <div className="product-div-div">
                   <div className="product-div-box">
@@ -338,7 +339,6 @@ const ProductListTab = () => {
                   </div>
                 </div>
               </div>
-            </>
           );
         })}
       </div>

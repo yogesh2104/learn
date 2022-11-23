@@ -17,9 +17,11 @@
     "react-google-recaptcha": "^2.1.0",
     "react-horizontal-scrolling": "^0.1.13",
     "react-icons": "^4.6.0",
+    "react-owl-carousel": "^2.3.3",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "react-select": "^5.6.0",
+    "tiny-slider": "^2.9.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

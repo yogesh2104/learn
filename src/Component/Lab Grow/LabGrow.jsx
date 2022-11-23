@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./labGrow.css";
-import HorizontalScroll from 'react-horizontal-scrolling' //!npm install react-horizontal-scrolling
+// import HorizontalScroll from 'react-horizontal-scrolling' //!npm install react-horizontal-scrolling
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+
 const LabGrow = () => {
   const [select, setSelected] = useState("");
   const baseurl = "http://192.168.1.215/stage_dioraadams/api/parameters";
@@ -34,8 +39,6 @@ const LabGrow = () => {
       }
     }
   };
-
-  console.log(select)
   return (
     <>
       <div className="parallax parallax_bg">
@@ -161,7 +164,7 @@ const LabGrow = () => {
               </p>
             </div>
             <div className='text-center'>
-            <HorizontalScroll >
+            {/* <HorizontalScroll >
                     {
                         getresults?.Shape?.map((item, index)=>{
                             return(
@@ -175,7 +178,22 @@ const LabGrow = () => {
                             )
                         })
                     }
-                </HorizontalScroll>
+                </HorizontalScroll> */}
+                <OwlCarousel className='owl-theme'dots={false} autoplay={true} autoWidth={true} nav>
+                {
+                        getresults?.Shape?.map((item, index)=>{
+                            return(
+                                <label key={index} className="option_itm main">
+                                    <input type="radio"className="checkbox none_display"onChange={handleCh} name='Shape'/>
+                                    <div className='item option_in main padd'>
+                                        <img className='mt-3' src={item.image} alt={item.name} width="90px" height="60px"/>
+                                        <label className='labels'>{item.name}</label>
+                                    </div>
+                                </label>
+                            )
+                        })
+                    }
+                </OwlCarousel>
                 <br/>
                 <br/>
                 <br/>
@@ -197,7 +215,6 @@ const LabGrow = () => {
                   How our lab grown diamonds are certified and graded?
                 </h1>
                 <p className="p-text">
-                  {" "}
                   The lab grown diamonds are graded and certified in the same
                   way as mined diamonds. A proper certification process is
                   followed to certify a lab grown diamond.
