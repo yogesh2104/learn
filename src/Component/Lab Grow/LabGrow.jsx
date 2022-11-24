@@ -12,7 +12,9 @@ const LabGrow = () => {
   const [getresults, setShapeResult] = useState([]);
 
   useEffect(() => {
-    getData();
+    setTimeout(()=>{
+      getData();
+    },2000)
   }, []);
   const getData = async () => {
     let formData = new FormData();
@@ -39,6 +41,7 @@ const LabGrow = () => {
       }
     }
   };
+  // console.log(getresults);
   return (
     <>
       <div className="parallax parallax_bg">
@@ -179,7 +182,7 @@ const LabGrow = () => {
                         })
                     }
                 </HorizontalScroll> */}
-                <OwlCarousel className='owl-theme'dots={false} autoplay={true} autoWidth={true} nav>
+                <OwlCarousel className='owl-theme' dots={false} autoplay={true} autoWidth={true}>
                 {
                         getresults?.Shape?.map((item, index)=>{
                             return(

@@ -218,7 +218,7 @@ const LeftSideFrom = () => {
               value="center"
               onChange={handleCenterStone}
               checked={centerStone}
-            />{" "}
+            />
             Center Stone
           </div>
           <div className="col-md-12 m">{centerStone && <CenterStone />}</div>
@@ -230,7 +230,7 @@ const LeftSideFrom = () => {
               value="side"
               onChange={handleSideStone}
               checked={sideStone}
-            />{" "}
+            />
             Side Stone
           </div>
           <div className="col-md-12 m">{sideStone && <SideStone />}</div>
@@ -291,7 +291,7 @@ const LeftSideFrom = () => {
               <div>
                 <div className="img">
                   <label htmlFor="upload" className="img_btn">
-                    {linkRadio === "img" ? "Browse Images" : "Browse Video"}{" "}
+                    {linkRadio === "img" ? "Browse Images" : "Browse Video"}
                     <input type="file" id="upload" className="file_up" />
                   </label>
                 </div>
